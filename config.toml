@@ -1,4 +1,4 @@
-baseURL = 'http://hugo-quickstart-template.netlify.com'
+baseURL = 'http://mencode.netlify.com'
 languageCode = 'en-us'
-title = 'TeaCode Netlify'
+title = 'menCode'
 theme = 'netlify-basic'
