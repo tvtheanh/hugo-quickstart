@@ -4,7 +4,7 @@ describe('empty spec', () => {
   })
   it('displays the resources text', () => {
     cy.get('h2')
-    .contains('We build static sites and develop custom webapps for small and micro businesses');
+    .contains('We build super-fast, <i>free-hosting</i> websites and develop <i>human-centric</i> webapps for small and micro businesses.');
   })
   it('renders the image', () => {
     cy.get('img')
