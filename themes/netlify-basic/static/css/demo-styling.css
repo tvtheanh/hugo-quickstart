@@ -154,12 +154,12 @@ footer img {
 
 .menu-toggle {
   display: block;
-  margin: 0;
+  margin: 1px;
+  
   background-color: black;
-  color: white;
   border-radius: 10px;
   font-size: 1.5em;
-  height: 2.25em;
+  height: auto;
 }
 
 .menu-dropdown {
