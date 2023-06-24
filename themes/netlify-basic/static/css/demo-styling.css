@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 :root {
-  --main-family: 'Poppins', sans-serif;
+  --main-family: 'Poppins', sans-serif !important;
   --color-bg: linear-gradient(180deg, #FFFFFF 0%, #AEC6DC 100%);
 
   /* Controls the blob blur gradient colors within the main tag's svg */
@@ -12,12 +12,13 @@
 }
 
 html {
-    background: var(--color-bg) !important;
-    font-family: var(--main-family);
-    min-height: 100%;
+  background: var(--color-bg);
+  font-family: var(--main-family);
+  min-height: 100%;
 }
 
 body{
+  background-color: var(--color-bg);
   margin: 0;
 }
 
@@ -25,36 +26,38 @@ i {
   color: #ff3e89;
 }
 
-#background {
-    position: fixed;
-    width: 100%;
-    z-index: -1;
-    height: 100%;
+#tea-background {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
 }
 
-#content {
+#tea-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  
 }
 
-.header{
+.tea-header{
     text-align: center;
 }
 
-.header h1 {
-  padding-top:5%;
+.tea-header h1 {
+  padding-top:10%;
   margin: 0;
   font-size: calc(max(5vw, 32px));
 }
 
-.header .logo img {
+.tea-header .logo img {
   padding: 30px 0;
-  width: 100%;
+  width: 90% auto;
+  border-radius: 3px;
 }
 
-.header h2 {
+.tea-header h2 {
   line-height: 34px;
   width: 50%;
   margin: 0 auto;
@@ -62,11 +65,17 @@ i {
   font-weight: 500;
 }
 
-@media only screen and (max-width: 450px) {
-  .header h2 {
+@media only screen and (max-width: 540px) {
+
+  .tea-header h1 {
+    padding-top: 20%;
+  }
+
+  .tea-header h2 {
     width: 90%;
     padding: 5%;
   }
+
 }
 
 .bttns{
@@ -131,72 +140,4 @@ i {
 .resource-list a {
   color: black;
   line-height: 30px;
-}
-
-footer {
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-}
-
-footer img {
-  width: 20px;
-}
-
-/* Menu toggle */
-.menu {
-  position: fixed;
-  bottom: 0.1em;
-  left: 0.1em;
-  margin: 0;
-  padding: 0;
-}
-
-.menu-toggle {
-  display: block;
-  margin: 1px;
-  
-  background-color: black;
-  border-radius: 10px;
-  font-size: 1.5em;
-  height: auto;
-}
-
-.menu-dropdown {
-  display: none;
-  right: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-}
-
-.menu.is-open .menu-dropdown {
-  display: block !important;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu {
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
-  text-align: left;
-  background-color: black;
-  color: white;
-}
-
-.nav-menu li + li {
-  border-top: 1px solid #ccc;
-}
-
-.nav-menu > li > a, .nav-menu > li > a:visited{
-  display: block;
-  text-decoration: none;
-  padding: 1em;
-  color: blue;
-  cursor: pointer;
-}
-
-.nav-menu > li > a:hover, .nav-menu > li > a:focus {
-  background-color: #E0E0E0;
 }

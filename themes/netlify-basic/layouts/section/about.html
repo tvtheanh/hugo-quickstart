@@ -1,5 +1,5 @@
 {{ define "main" }}
-<svg id="background" width='1728' height='1235' viewBox="0 0 1728 1235" fill='none' xmlns='http://www.w3.org/2000/svg'>
+<svg id="tea-background" width='1728' height='1235' viewBox="0 0 1728 1235" fill='none' xmlns='http://www.w3.org/2000/svg'>
   <g opacity='0.75' filter='url(#filter0_f_39_143)'>
     <circle cy='1000' r='264' fill='url(#paint0_linear_39_143)'/>
   </g>
@@ -26,20 +26,9 @@
     </linearGradient>
   </defs>
 </svg>     
-<div id="content">
-  <div class="header">
+<div id="tea-content">
+  <div class="tea-header">
     <h1>We help you tell your own story <i>online</i></h1>
-    <nav class="menu" id="main-menu">
-      <div class="menu-dropdown">
-        <ul class="nav-menu">
-          <li><a href="#">Ngôn ngữ: Tiếng Việt</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">What we do</a></li>
-        </ul>
-      </div>
-      <img src="/images/menu.png" class="menu-toggle" id="toggle-menu">
-       
-    </nav>
     <div class="logo">
       <img src="/images/food-sm.jpg" srcset="/images/food-sm.jpg, /images/food.jpg"
         alt="fast website" role="presentation">
@@ -66,15 +55,5 @@
     </ul>
   </div>
 </div>
-<script type="text/javascript">
-  (function () {
-    var button = document.getElementById("toggle-menu");
-    button.addEventListener('click', function (event) {
-      event.preventDefault();
-      var menu = document.getElementById("main-menu");
-      menu.classList.toggle("is-open");
-    });
-  })();
 
-</script>
 {{ end }}
