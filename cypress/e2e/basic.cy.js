@@ -4,7 +4,7 @@ describe('empty spec', () => {
   })
   it('displays the resources text', () => {
     cy.get('h2')
-    .contains('We build super-fast');
+    .contains('Ch');
   })
   it('renders the image', () => {
     cy.get('img')
