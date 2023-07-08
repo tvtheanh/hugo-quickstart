@@ -142,3 +142,10 @@ i {
   color: black;
   line-height: 30px;
 }
+
+@media only screen and (max-width: 991px) {
+  .header-area2 .main-menu {
+    background: #1d1d1d;
+  }
+  
+}
